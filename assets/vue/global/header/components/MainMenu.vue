@@ -1,7 +1,7 @@
 <template>
     <div class="menu__item-inner">
         <div class="mainmenu">
-            <a href="" class="mainmenu__item" @click="$emit('close')">
+            <a href="/" class="mainmenu__item" @click="$emit('close')">
                 Homeward
             </a>
             <a href="" class="mainmenu__item" @click="$emit('close')">
