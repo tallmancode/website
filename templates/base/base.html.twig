@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% if pageDescription is defined %} <meta name="description" content="{{ pageDescription }}"> {% endif %}
+    {% if pageKeywords is defined %} <meta name="keywords" content="{{ pageKeywords }}"> {% endif %}
+    <meta name="author" content="{{ siteAuthor|default('Steve (Tallman) Stewart') }}">
+    {% if pageTitle is defined %} <title>{% block title %}{{ pageTitle }}{% endblock %}</title> {% endif %}
+
+    {% if ogTitle is defined %} <meta property="og:title" content="{{ ogTitle }}"> {% endif %}
+    {% if ogDescription is defined %} <meta property="og:description" content="{{ ogDescription }}"> {% endif %}
+    {% if ogType is defined %} <meta property="og:type" content="{{ ogType }}"> {% endif %}
+    {% if ogImage is defined %} <meta property="og:image" content="{{ ogImage }}"> {% endif %}
+    {% if ogUrl is defined %} <meta property="og:url" content="{{ ogUrl }}"> {% endif %}
+
+    {% if twitterCardType is defined %} <meta name="twitter:card" content="{{ twitterCardType }}"> {% endif %}
+    {% if twitterTitle is defined %} <meta name="twitter:title" content="{{ twitterTitle }}"> {% endif %}
+    {% if twitterDescription is defined %} <meta name="twitter:description" content="{{ twitterDescription }}"> {% endif %}
+    {% if twitterImage is defined %} <meta name="twitter:image" content="{{ twitterImage }}"> {% endif %}
+
+    <!-- Favicon and touch icons -->
+    {% block fav_icons %}
+        {% include 'base/partials/fav_icons.html.twig' %}
+    {% endblock %}
+
+    {{ encore_entry_link_tags('base') }}
+    {% block stylesheets %}
+
+    {% endblock %}
+</head>
+<body  {% if bodyClass is defined %} class="{{ bodyClass }}" {% endif %}>
+<div id="app">
+    {% block body %}
+        {% block header %}
+            <header-inner></header-inner>
+        {% endblock %}
+
+        <main>
+            {% block main %}{% endblock %}
+        </main>
+
+        {% block footer %}
+            <footer>
+                {% block footer_content %} {% endblock %}
+            </footer>
+        {% endblock %}
+    {% endblock %}
+</div>
+{% block javascripts %}
+
+{% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1400px
+) !default;
+
+//colours
+$dark:                      #212529 !default;
+$light:                     #f8f9fa !default;
+
+$body-bg:                   $light!default;
+
+$font-family:               "Roboto", sans-serif !default;;
+$font-size-root:            16px !default;
+$font-size-base:            1rem !default;
+$font-weight-base:          400 !default;
+$font-color:                $dark !default;
+$line-height-base:          1.5 !default;
+$font-size-sm:              $font-size-base * .875 !default;
+$font-size-lg:              $font-size-base * 1.25 !default;
