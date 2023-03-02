@@ -1,7 +1,7 @@
 <template>
     <div class="hero-outer">
         <div class="inner" :style="{'background-image': `url(${require('/assets/media/page-banners/blog-header.png')})`}">
-
+            <posts-slide></posts-slide>
             <tag-blocks></tag-blocks>
         </div>
     </div>
@@ -25,8 +25,11 @@ export default {
 @import 'assets/scss/vue-helper';
 .hero-outer{
     padding-bottom: 50px;
+    display: flex;
+    flex-flow: column;
     .inner{
-        min-height: 75vh;
+        padding-bottom: 75px;
+        height: 75vh;
         background-color: $white;
         background-repeat: no-repeat;
         background-size: cover;
@@ -35,6 +38,7 @@ export default {
         position: relative;
         display: flex;
         flex-flow: column nowrap;
+        justify-content: flex-end;
     }
 }
 
