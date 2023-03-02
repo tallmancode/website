@@ -22,6 +22,7 @@ Encore
      * and one CSS file (e.g. app.css) if your JavaScript imports CSS.
      */
     .addEntry('index', './assets/vue/index/index.js')
+    .addEntry('stories', './assets/vue/stories/stories.js')
 
     .addStyleEntry('base', './assets/scss/base.scss')
 

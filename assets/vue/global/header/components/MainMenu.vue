@@ -4,8 +4,8 @@
             <a href="/" class="mainmenu__item" @click="$emit('close')">
                 Homeward
             </a>
-            <a href="" class="mainmenu__item" @click="$emit('close')">
-                Projects
+            <a href="/stories" class="mainmenu__item" @click="$emit('close')">
+                stories
             </a>
             <a href="" class="mainmenu__item" @click="$emit('close')">
                 Documentation
@@ -33,7 +33,12 @@ export default {
 <style scoped lang="scss">
 @import 'assets/scss/vue-helper';
 $menu-item-alt: #494d54;
-$menu-link-hover-colour: #f20c40;
+$menu-link-hover-colour: #01cfff;
+$alt: #0271ff;
+$another-white: #d2d3d3;
+$a1 : #7d7f80;
+$panel-bg-2: #555759;
+$panel-bg-1: #2d3032;
 .mainmenu{
     @include media-breakpoint-up('lg'){
         counter-reset: menuitem;

@@ -16,12 +16,13 @@ export default {
 }
 </script>
 <style scoped lang="scss">
+@import 'assets/scss/vue-helper';
 header{
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 99;
-    height: 80px;
+    height: $header-height;
     background-color: #fff;
     padding: 0 1.5rem;
     .header-brand{
@@ -32,8 +33,12 @@ header{
 .overlay-header{
     header{
         background-color: transparent;
-        .header-brand{
-            display: none;
+    }
+    &:not(.with-logo){
+        header{
+            .header-brand{
+                display: none;
+            }
         }
     }
 }

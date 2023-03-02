@@ -8,6 +8,6 @@ const app = createApp({});
 
 //Components
 app.component('header-inner', require('../global/header/Header').default)
-
+app.component('hero', require('./components/hero').default)
 
 const vm = app.mount('#app')

@@ -201,6 +201,9 @@ $menu-info-colour: #57535a;
 $menu-title-colour: #e23434;
 $menu-tagline-colour: #e2e2e2;
 $menu-mobile-row-count: 5;
+
+$panel-bg-1: #2d3032;
+$panel-bg-2: #555759;
 /* Icons */
 .icon {
     display: block;
@@ -298,7 +301,7 @@ main {
 
             :deep(.menu__item-inner) {
                 transform: translate(0%, -101%);
-                background: $menu-item1-backgound;
+                background: $panel-bg-1;
             }
         }
 
@@ -318,7 +321,7 @@ main {
 
             :deep(.menu__item-inner) {
                 transform: translate(0%, -101%);
-                background: $menu-item3-backgound;
+                background: $panel-bg-2;
             }
         }
 
@@ -328,7 +331,7 @@ main {
 
             .menu__item-inner {
                 transform: translate(-101%, 0px);
-                background: $menu-item4-backgound;
+                background: $panel-bg-1;
             }
         }
 

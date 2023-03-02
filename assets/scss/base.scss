@@ -1,6 +1,7 @@
 @import "variables";
 @import "reset";
-@import 'mixins/breakpoints-mixin';
+@import 'mixins/mixins';
+@import "containers";
 
 :root {
     font-size: $font-size-root;

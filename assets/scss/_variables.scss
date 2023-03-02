@@ -1,3 +1,5 @@
+$grid-gutter-width:           1.5rem !default;
+
 $grid-breakpoints: (
         xs: 0,
         sm: 576px,
@@ -7,7 +9,20 @@ $grid-breakpoints: (
         xxl: 1400px
 ) !default;
 
+//containers
+$container-padding-x: $grid-gutter-width * .5 !default;
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+        xxl: 1320px
+) !default;
+
+
 //colours
+$white:                     #ffffff !default;
 $dark:                      #212529 !default;
 $light:                     #f8f9fa !default;
 
@@ -21,3 +36,10 @@ $font-color:                $dark !default;
 $line-height-base:          1.5 !default;
 $font-size-sm:              $font-size-base * .875 !default;
 $font-size-lg:              $font-size-base * 1.25 !default;
+
+/**
+ * Page Elements
+ */
+
+//header
+$header-height:             80px!default;
