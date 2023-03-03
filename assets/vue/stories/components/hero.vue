@@ -29,7 +29,7 @@ export default {
     flex-flow: column;
     .inner{
         padding-bottom: 75px;
-        height: 75vh;
+        height: 85vh;
         background-color: $white;
         background-repeat: no-repeat;
         background-size: cover;

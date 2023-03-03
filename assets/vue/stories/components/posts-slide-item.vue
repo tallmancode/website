@@ -31,30 +31,21 @@ export default {
 <style scoped lang="scss">
 @import "assets/scss/vue-helper";
 .slide-item{
-    flex: 1;
+    display: inline-block;
     padding: 1rem;
-    height: calc(75vh - 300px);
-    //&:first-of-type{
-    //    height: 125%;
-    //}
-    //&:last-of-type{
-    //    height: 125%;
-    //    transform: translateY(-25%);
-    //}
-    &:first-of-type,  &:last-of-type{
-        //.slide-item__inner img{
-        //    height:100%;
-        //    width: auto;
-        //}
-    }
+    height: calc(70vh - 200px);
     &__inner{
+        width: calc((125vw/4) - 2rem);
         overflow: hidden;
         position: relative;
-        width:100%;
         height: 100%;
         img{
             height:100%;
             width: auto;
+        }
+        .content{
+            position: absolute;
+            bottom: 0;
         }
     }
 }
